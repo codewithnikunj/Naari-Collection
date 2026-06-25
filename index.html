@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naari Womens Collection | Premium Cotton Wear</title>
+    <!-- FontAwesome for Icons -->
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="script.js">
+    
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="" class="logo-area">
+                <!-- Circular Emblem imitating your uploaded logo asset -->
+                <div class="logo-img">
+                    <i>
+                        <img src="images/logo.webp" alt="" style="width: 50px; border-radius: 200px;">
+                    </i>
+                </div>
+                <div class="brand-name">NAARI <span>COLLECTION</span></div>
+                
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <div class="cart-icon-container" id="cartToggle">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section class="hero">
+        <h1>Discover Authentic <span>Naari</span> Grace</h1>
+        <p>Explore premium traditional and contemporary styles carefully selected to highlight your elegance.</p>
+        <a href="#collections" class="btn">Explore Collections</a>
+    </section>
+
+    <!-- Separated Categories Layout Grid -->
+    <main class="container" id="collections">
+        <h2 class="section-title">Our Collections</h2>
+        
+        <div class="category-grid">
+            
+            <!-- Column 1: Kurtis -->
+            <div class="category-column">
+                <div class="category-header">Kurtis</div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=400&auto=format&fit=crop" alt="Anarkali Kurti" class="product-img">
+                    <div class="product-title">Floral Anarkali Kurti</div>
+                    <div class="product-price">₹1,299</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Floral Anarkali Kurti')">Add To Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?q=80&w=400&auto=format&fit=crop" alt="Straight Kurti" class="product-img">
+                    <div class="product-title">Pure Cotton Straight Kurti</div>
+                    <div class="product-price">₹899</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Pure Cotton Straight Kurti')">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- Column 2: 2 Piece Sets -->
+            <div class="category-column">
+                <div class="category-header">2 Piece Sets</div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=400&auto=format&fit=crop" alt="Kurti Pant Set" class="product-img">
+                    <div class="product-title">Embroidered Kurti & Pant</div>
+                    <div class="product-price">₹1,699</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Embroidered Kurti & Pant')">Add To Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/k3.avif" alt="" style="width: 180px;">
+                    <div class="product-title">Jaipuri Printed 2-Piece</div>
+                    <div class="product-price">₹1,450</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Jaipuri Printed 2-Piece')">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- Column 3: 3 Piece Suits -->
+            <div class="category-column">
+                <div class="category-header">3 Piece Suits</div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=400&auto=format&fit=crop" alt="Premium Suit Set" class="product-img">
+                    <div class="product-title">Premium Chanderi Suit Set</div>
+                    <div class="product-price">₹2,899</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Premium Chanderi Suit Set')">Add To Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=400&auto=format&fit=crop" alt="Anarkali 3pc" class="product-img">
+                    <div class="product-title">Festive Wear 3-Piece Suit</div>
+                    <div class="product-price">₹3,499</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Festive Wear 3-Piece Suit')">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- Column 4: Co-ord Sets -->
+            <div class="category-column">
+                <div class="category-header">Co-ord Sets</div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=400&auto=format&fit=crop" alt="Western Co-ord" class="product-img">
+                    <div class="product-title">Western Cotton Co-ord Set</div>
+                    <div class="product-price">₹1,899</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Western Cotton Co-ord Set')">Add To Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop" alt="Indo Western Co-ord" class="product-img">
+                    <div class="product-title">Indo-Western Printed Set</div>
+                    <div class="product-price">₹1,999</div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Indo-Western Printed Set')">Add To Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Sliding Sidebar Mini Cart -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3>Your Shopping Bag</h3>
+            <i class="fa-solid fa-xmark close-cart" id="closeCart"></i>
+        </div>
+        <div class="cart-items-container" id="cartItems">
+            <p class="empty-cart-msg">Your cart is currently empty.</p>
+        </div>
+        <button class="checkout-btn" onclick="checkoutAlert()">Proceed To Checkout</button>
+    </div>
+
+    <!-- Info Banner / About section -->
+    <section class="container" id="about" style="text-align: center; max-width: 800px; margin-top: 20px;">
+        <h2 class="section-title">About Naari Collection</h2>
+        <p style="color: var(--text-muted); line-height: 1.8;">
+            Welcome to Naari Womens Collection. We celebrate womanhood by offering a premium and thoroughly curated collection of Kurtis, multi-piece suits, and trending co-ord sets. Our designs bridge the gap between timeless cultural heritage and modern everyday wear, guaranteeing elegance and unmatched comfort.
+        </p>
+    </section>
+
+    <!-- Footer Area -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Naari Womens Collection</h3>
+                <p>Bringing modern styles and vibrant traditions straight to your wardrobe.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100093465023049" target="_blank"><i class="fa-brands fa-facebook-f"></i>
+                    <img src="images/facebook-logo.png" alt=""></a>
+                    <a href="https://www.instagram.com/_naaricollection/" class = "instagram-link ="_blank"><i class="fa-brands fa-instagram"></i>
+                    <img src="images/instagram-logo.png" alt=""></a>
+                    <!-- Requested Channel Link -->
+                    <a href="https://www.youtube.com/@Naari_9Collection" class="youtube-link" target="_blank" title="Watch us on YouTube"><i class="fa-brands fa-youtube"></i>
+                    <img src="images/youtube logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#collections">Our Collections</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Support</h3>
+                <p><i class="fa-solid fa-envelope" style="color: var(--accent-gold); margin-right: 8px;"></i>966784734 <span>  8115573965  </span></p>
+                <p><i class="fa-solid fa-envelope" style="color: var(--accent-gold); margin-right: 8px;"></i> naariwomenscollections@gmail.com</p>
+                <p style="margin-top: 10px;"><i class="fa-solid fa-location-dot" style="color: var(--accent-gold); margin-right: 8px;"></i>Ghaziabad, UP, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Naari Womens Collection. All Rights Reserved.
+        </div>
+    </footer>
+
+    
+</body>
+</html>
